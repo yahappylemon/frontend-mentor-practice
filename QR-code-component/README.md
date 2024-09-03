@@ -4,8 +4,10 @@ This is my solution to the [QR code component challenge](https://www.frontendmen
 
 ## Overview
 
-![my solution screenshot](./images/solution-screenshot.png)
-:point_right:[Here's the Link](https://yahappygrace.github.io/frontend-mentor-practice/QR-code-component/index.html):smiley:
+<div align=center><img src="./images/solution-screenshot.png" width="400px"/></div>
+</br>
+
+:point_right: [Here's the Link](https://yahappygrace.github.io/frontend-mentor-practice/QR-code-component/index.html) :smiley:
 
 ## Lessons learned
 
