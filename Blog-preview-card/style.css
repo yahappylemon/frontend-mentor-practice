@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0rem 1rem;
+  background-color: #f4d04e;
+  color: #6b6b6b;
+  font-family: "Figtree", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #111111;
+  font-weight: 800;
+}
+
+h5 {
+  color: #111111;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-top: 12px;
+}
+.card {
+  max-width: 24rem;
+  padding: 24px;
+  display: grid;
+  border-radius: 20px;
+  border: 1px solid #111111;
+  background-color: #fff;
+  box-shadow: 8px 8px #111111;
+}
+
+.content {
+  margin: 24px 0;
+}
+
+.label {
+  max-width: 82px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background-color: #f4d04e;
+  font-weight: 800;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  max-width: 2rem;
+}
+
+.author h5 {
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+.attribution {
+  font-size: 0.68rem;
+  text-align: center;
+}
+
+.content h2:hover {
+  color: #f4d04e;
+  cursor: pointer;
+}

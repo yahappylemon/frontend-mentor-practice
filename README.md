@@ -6,10 +6,11 @@ After watching tons of courses, I decided to take Frontend Mentor Challenges to 
 
 This repo contains the free challenges on [Frontend Mentor](https://www.frontendmentor.io).
 
-:house_with_garden: [Homepage](https://yahappygrace.github.io/frontend-mentor-practice/)
+:house_with_garden: [Homepage](https://yahappylemon.github.io/frontend-mentor-practice/)
 
 |     Challenge     |                                                               My Solution                                                               |
 | :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-| QR code component | [Link](https://yahappygrace.github.io/frontend-mentor-practice/QR-code-component/index.html)<br>[README](./QR-code-component/README.md) |
+| QR code component | [Link](https://yahappylemon.github.io/frontend-mentor-practice/QR-code-component/index.html)<br>[README](./QR-code-component/README.md) |
+| Blog preview card | [Link](https://yahappylemon.github.io/frontend-mentor-practice/Blog-preview-card/index.html)<br>[README](./Blog-preview-card/README.md) |
 
-_Still Working on...!! :muscle:_
+_Still Working on it...!! :muscle:_

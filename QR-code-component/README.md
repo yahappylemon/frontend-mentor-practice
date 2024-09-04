@@ -7,9 +7,9 @@ This is my solution to the [QR code component challenge](https://www.frontendmen
 <div align=center><img src="./images/solution-screenshot.png" width="400px"/></div>
 </br>
 
-:point_right: [Here's the Link](https://yahappygrace.github.io/frontend-mentor-practice/QR-code-component/index.html) :smiley:
+:point_right: [Here's the Link](https://yahappylemon.github.io/frontend-mentor-practice/QR-code-component/index.html) :smiley:
 
-## Lessons learned
+## My Reflection
 
 My first challenge on Frontend Mentor! :tada:
 
@@ -42,3 +42,21 @@ Although the challenge itself wasn't that hard, but I spent a lot of time figuri
 - [Figma for developers](https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1)
 - [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - [Markdown Emoji](https://gist.github.com/rxaviers/7360908) :point_left:My favorite part of writing Markdowns!! :laughing: :laughing:
+
+## Community Feedback Summary
+
+- **HTML**: add `<header>` and `<main>` tags to increase accessibility.
+- **CSS**
+  - **Add padding to `<body>`**: Avoid components touching the edges on small screens.
+  - **Add `gap: 1rem` to `<body>`**: Avoid component touching the `<header>` and `<footer>`.
+  - **Use `align-items: center` instead of `margin: 0 auto` to center the component.**
+  - **Use `max-width` instead of `width`**
+    - Let the component/image grow and shrink according to the screen size.
+    - Limit the width of the component/image to prevent overflow.
+  - **Add `display: block` to `<img>`**: `<img>` has a display value of `inline` by default, so changing it to `display: block` might have a better control.
+  - **Remove redundant `font-weight`**: `font-weight` of `<h2>` and `<p>` was the same as default values.
+  - **Changing `px` to `rem/em`**: use `rem/em` for `font-size` and `letter-spacing` to increase accessibility.
+
+## Acknowledgments
+
+Thanks to [Islandstone89](https://github.com/Islandstone89)'s feedback! :blush:

@@ -7,34 +7,42 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="../favicon-32x32.png"
+      href="./assets/images/favicon-32x32.png"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style.css" />
-    <title>Frontend Mentor | QR code component</title>
+    <title>Frontend Mentor | Blog preview card</title>
   </head>
   <body>
-    <header><h1>QR code component</h1></header>
+    <header><h1>Blog preview card</h1></header>
     <main>
-      <div class="component">
-        <img
-          src="./images/image-qr-code.png"
-          alt="QR code to visit Frontend Mentor"
-        />
-        <div class="txt">
-          <h2>Improve your front-end skills by building projects</h2>
+      <div class="card">
+        <img src="./assets/images/illustration-article.svg" alt="blog image" />
+        <div class="content">
+          <h5 class="label">Learning</h5>
+          <h5>Published 21 Dec 2023</h5>
+          <h2>HTML & CSS foundations</h2>
           <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
           </p>
+        </div>
+        <div class="author">
+          <img
+            class="avatar"
+            src="./assets/images/image-avatar.webp"
+            alt="avatar of Greg Hooper"
+          />
+          <h5>Greg Hooper</h5>
         </div>
       </div>
     </main>
+
     <footer class="attribution">
       <h2><a href="../index.html">Back to menu</a></h2>
       Challenge by
