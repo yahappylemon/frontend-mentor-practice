@@ -8,9 +8,10 @@ This repo contains the free challenges on [Frontend Mentor](https://www.frontend
 
 :house_with_garden: [Homepage](https://yahappylemon.github.io/frontend-mentor-practice/)
 
-|     Challenge     |                                                               My Solution                                                               |
-| :---------------: | :-------------------------------------------------------------------------------------------------------------------------------------: |
-| QR code component | [Link](https://yahappylemon.github.io/frontend-mentor-practice/QR-code-component/index.html)<br>[README](./QR-code-component/README.md) |
-| Blog preview card | [Link](https://yahappylemon.github.io/frontend-mentor-practice/Blog-preview-card/index.html)<br>[README](./Blog-preview-card/README.md) |
+|      Challenge       |                                                                  My Solution                                                                  |
+| :------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------: |
+|  QR code component   |    [Link](https://yahappylemon.github.io/frontend-mentor-practice/QR-code-component/index.html)<br>[README](./QR-code-component/README.md)    |
+|  Blog preview card   |    [Link](https://yahappylemon.github.io/frontend-mentor-practice/Blog-preview-card/index.html)<br>[README](./Blog-preview-card/README.md)    |
+| Social links profile | [Link](https://yahappylemon.github.io/frontend-mentor-practice/Social-links-profile/index.html)<br>[README](./Social-links-profile/README.md) |
 
 _Still Working on it...!! :muscle:_
