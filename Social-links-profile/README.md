@@ -11,16 +11,16 @@ This is a solution to the [Social links profile challenge](https://www.frontendm
 
 ## My Reflection
 
-There's no Figma file in this challenge, so I spent a lot of time figuring out the padding/margin of the component:sweat:
+There's no Figma file in this challenge, so I spent a lot of time figuring out the padding/margin of the component :sweat:
 
-I noticed that I missed a part while doing the [Blog Preview Card Challenge](https://yahappylemon.github.io/frontend-mentor-practice/Blog-preview-card/index.html), so I tried to do it in this one:
+I noticed that I missed a part while doing the [Blog Preview Card Challenge](https://yahappylemon.github.io/frontend-mentor-practice/Blog-preview-card/index.html), so I tried to do it in this one :
 
 **How to Reduce font size without using media queries**
 
 - **Use `calc()` function**: _e.g.`calc(0.93rem + 0.5vw)`_
   - Set a base `font-size` and let it grow as the `vw` changes.
   - The `+` and `-` operators **must be surrounded by whitespace**.
-  - **DownSide**: Font size might shrink too much in small screens.
+  - **Downside**: Font size might shrink too much in small screens.
 - **Use `clamp()` function**: _e.g.`clamp(0.63rem, 1.5vw, 0.75rem)`_
   - **First param**: minimum size
   - **Second param**: ideal size

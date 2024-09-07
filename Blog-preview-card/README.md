@@ -29,4 +29,4 @@ I've never tried Grid as layout before, so I used Grid instead of Flexbox in thi
 
 There's not too much feedback on my challenge, so I tried to give a longer feedback while doing the peer review.
 
-Reviewing others' code is harder than I thought, but I gained a lot along the way! (Thanks again to those who helped me with my code:joy:)
+Reviewing others' code is harder than I thought, but I gained a lot along the way! (Thanks again to those who helped me with my code :joy:)

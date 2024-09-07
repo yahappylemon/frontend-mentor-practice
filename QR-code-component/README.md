@@ -34,7 +34,7 @@ Although the challenge itself wasn't that hard, but I spent a lot of time figuri
   - **Deploy with Github-pages**: repo must be **_public_**!
 
 - **Markdown**
-  - **Just get familiar with the syntax**: Markdown is actually quite user-friendly! The struggling part was coming up ideas :joy:
+  - **Just get familiar with the syntax**: Markdown is actually quite user-friendly! The struggling part was coming up with ideas :joy:
   - **Preview your markdown files**: Download **_Markdown Preview Enhanced_** extension on VScode
 
 ## Useful Resources
