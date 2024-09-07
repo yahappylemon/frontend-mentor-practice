@@ -17,8 +17,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
-  line-height: 1.3;
+  line-height: 1;
   letter-spacing: 0.02rem;
 }
 
@@ -37,18 +36,26 @@ h1,
 h2 {
   color: hsl(24, 5%, 18%);
   font-family: "Young Serif", Arial, sans-serif;
+  font-weight: 500;
 }
 
 h3 {
   color: hsl(14, 45%, 36%);
   font-family: "Young Serif", Arial, sans-serif;
   font-size: 1.75rem;
+  margin: 32px 0px 26.5px 0px;
+  font-weight: 400;
   line-height: 1;
-  margin: 32px 0px 26px 0px;
+}
+
+p,
+li {
+  line-height: 1.3;
 }
 
 main {
   max-width: 46rem;
+  margin-top: 59px;
 }
 
 .image {
@@ -68,7 +75,7 @@ main {
 }
 
 .card h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 41px 0 27px 0;
 }
 
@@ -79,9 +86,13 @@ main {
   margin-top: 38px;
   line-height: 1.2;
 }
-.time p {
+.time h3 {
   color: hsl(332, 51%, 32%);
+  font-size: 1rem;
+  font-family: "Outfit", Arial, sans-serif;
   padding-bottom: 18px;
+  margin: 0px;
+  font-weight: 700;
 }
 .time ul {
   padding-left: 22px;
@@ -131,7 +142,7 @@ table {
   border-collapse: collapse;
   text-align: left;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 tr {
   border-bottom: 1px solid rgb(190, 190, 190);
@@ -152,6 +163,7 @@ td {
 .attribution {
   font-size: 0.68rem;
   text-align: center;
+  padding-top: 1rem;
 }
 a:hover {
   color: hsl(14, 45%, 36%);
