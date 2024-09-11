@@ -111,6 +111,7 @@ h1 {
   background-color: $dark-grayish-blue;
   padding: 18px 37px;
   border-radius: 15px;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
   p {
     color: $grayish-blue;
     letter-spacing: 0.33rem;
@@ -170,7 +171,7 @@ button {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .card {
     max-width: 20.5rem;
     flex-direction: column;

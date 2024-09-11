@@ -15,5 +15,6 @@ This repo contains the free challenges on [Frontend Mentor](https://www.frontend
 |   Social links profile    |      [Link](https://yahappylemon.github.io/frontend-mentor-practice/Social-links-profile/index.html)<br>[README](./Social-links-profile/README.md)      |
 |        Recipe page        |               [Link](https://yahappylemon.github.io/frontend-mentor-practice/Recipe-page/index.html)<br>[README](./Recipe-page/README.md)               |
 | Article preview component | [Link](https://yahappylemon.github.io/frontend-mentor-practice/Article-preview-component/index.html)<br>[README](./Article-preview-component/README.md) |
+|  Newsletter sign-up form  |   [Link](https://yahappylemon.github.io/frontend-mentor-practice/Newsletter-sign-up-form/index.html)<br>[README](./Newsletter-sign-up-form/README.md)   |
 
 _Still Working on it...!! :muscle:_

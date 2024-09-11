@@ -8,5 +8,3 @@ This is a solution to the [Article preview component challenge](https://www.fron
 </br>
 
 :point_right: [Here's the Link](https://yahappylemon.github.io/frontend-mentor-practice/Article-preview-component/index.html) :smiley:
-
-## My Reflection

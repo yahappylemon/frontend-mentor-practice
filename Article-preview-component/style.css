@@ -105,6 +105,7 @@ h1 {
   background-color: hsl(217, 19%, 35%);
   padding: 18px 37px;
   border-radius: 15px;
+  box-shadow: 0px 8px 6px rgba(0, 0, 0, 0.2);
 }
 .links p {
   color: hsl(212, 23%, 69%);
@@ -164,7 +165,7 @@ button:hover path {
   color: hsl(214, 17%, 51%);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 860px) {
   .card {
     max-width: 20.5rem;
     flex-direction: column;
