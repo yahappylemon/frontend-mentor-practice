@@ -1,6 +1,6 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Frontend Mentor - Newsletter sign-up form with success message
 
-This is a solution to the [Newsletter sign-up form with success message challenge](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv).
+This is a solution to the [Newsletter sign-up form with success message challenge](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv) on Frontend Mentor.
 
 ## Overview
 
