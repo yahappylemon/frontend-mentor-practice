@@ -24,6 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   line-height: 1;
   background-color: $very-dark-blue;
@@ -260,4 +261,19 @@ section {
     align-items: center;
     padding-top: 17px;
   }
+}
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: $very-dark-blue;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: $very-dark-blue;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: $blue;
 }

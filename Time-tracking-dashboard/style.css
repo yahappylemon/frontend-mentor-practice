@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   line-height: 1;
   background-color: hsl(226, 43%, 10%);
@@ -237,4 +238,21 @@ section {
     align-items: center;
     padding-top: 17px;
   }
+}
+body::-webkit-scrollbar {
+  width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(226, 43%, 10%);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(226, 43%, 10%);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(246, 80%, 60%);
 }/*# sourceMappingURL=style.css.map */
