@@ -48,10 +48,13 @@ button {
   font-size: 1rem;
   color: $pale-blue;
   cursor: pointer;
-  &:hover,
-  &:focus {
+  &:hover {
     color: #fff;
   }
+}
+
+.active {
+  color: #fff;
 }
 
 h1 {

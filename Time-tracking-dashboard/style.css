@@ -37,7 +37,11 @@ button {
   color: hsl(236, 100%, 87%);
   cursor: pointer;
 }
-button:hover, button:focus {
+button:hover {
+  color: #fff;
+}
+
+.active {
   color: #fff;
 }
 

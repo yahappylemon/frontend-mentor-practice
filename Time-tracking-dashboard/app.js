@@ -1,7 +1,4 @@
-const dailyBtn = document.getElementById("daily");
-const weeklyBtn = document.getElementById("weekly");
-const monthlyBtn = document.getElementById("monthly");
-
+const btns = [...document.querySelectorAll("button")];
 const timeDiv = [...document.getElementsByClassName("time")];
 
 let fetchedData = null;
@@ -23,11 +20,28 @@ async function getData() {
 
 getData();
 
-async function updateDOM(timeframe, text) {
+function updateDOM(e) {
   if (fetchedData === null) {
     window.alert(errMsg);
   }
+
+  // add css to current button
+  btns.forEach((btn) => btn.classList.remove("active"));
+  e.target.classList.add("active");
+
+  // change context to current timeframe
+  let timeframe = e.target.id;
   let timeframes = fetchedData.map((obj) => obj.timeframes[timeframe]);
+
+  let text;
+  if (timeframe === "daily") {
+    text = "Yesterday";
+  } else if (timeframe === "weekly") {
+    text = "Last Week";
+  } else {
+    text = "Last Month";
+  }
+
   timeDiv.map(
     (div, index) =>
       (div.innerHTML = `<h3>${timeframes[index].current}hrs</h3>
@@ -35,6 +49,6 @@ async function updateDOM(timeframe, text) {
   );
 }
 
-dailyBtn.addEventListener("click", () => updateDOM("daily", "Yesterday"));
-weeklyBtn.addEventListener("click", () => updateDOM("weekly", "Last Week"));
-monthlyBtn.addEventListener("click", () => updateDOM("monthly", "Last Month"));
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => updateDOM(e));
+});
