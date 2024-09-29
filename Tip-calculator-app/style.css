@@ -1,0 +1,286 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--light-grayish-cyan);
+  color: var(--strong-cyan);
+  font-family: "Space Mono", Arial, sans-serif;
+}
+
+h1 {
+  color: var(--very-dark-cyan);
+  text-align: center;
+  line-height: 1;
+}
+
+main {
+  display: grid;
+  justify-items: center;
+  gap: 2.5rem;
+}
+
+input[type="reset"] {
+  max-width: 100%;
+  min-width: 17rem;
+  font: inherit;
+  text-transform: uppercase;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.7rem 0rem 0.7rem 0rem;
+  margin-bottom: 0rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type="reset"]:hover {
+  background-color: var(--light-grayish-cyan);
+  cursor: pointer;
+}
+
+input[type="reset"]:disabled,
+input[type="reset"]:disabled:hover {
+  background-color: var(--strong-cyan);
+  opacity: 0.2;
+  color: var(--dark-grayish-cyan);
+  cursor: default;
+}
+
+form {
+  border-radius: 1rem;
+  padding-block: 2rem;
+  padding-inline: 1.5rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-area {
+  display: grid;
+}
+
+.labels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.input-area label {
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--dark-grayish-cyan);
+}
+
+.error {
+  font-size: 0.875rem;
+  color: rgba(225, 121, 112);
+  display: none;
+  justify-self: end;
+}
+
+input {
+  max-width: 100%;
+  font: inherit;
+  border: none;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  border-radius: 0.5rem;
+  padding-block: 0.4rem;
+  padding-inline: 0.8rem;
+  margin-bottom: 2rem;
+  text-align: end;
+  background-position: 5% 50%;
+  background-repeat: no-repeat;
+}
+
+.input-area > :nth-child(2) {
+  background-image: url("./images/icon-dollar.svg");
+}
+
+.input-area > :last-child {
+  background-image: url("./images/icon-person.svg");
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input::placeholder,
+.total-title span {
+  color: var(--grayish-cyan);
+  text-align: end;
+}
+
+input:focus {
+  outline-color: transparent;
+}
+
+.focus-border {
+  border: 2px solid var(--strong-cyan);
+}
+
+.error-border {
+  border: 2px solid rgba(225, 121, 112);
+}
+
+.tip-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tip-btn {
+  background-color: var(--very-dark-cyan);
+  color: #fff;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.active-tip-btn {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+}
+
+.tip-btn:hover {
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  cursor: pointer;
+}
+
+.custom-tip-container {
+  position: relative;
+  display: grid;
+}
+
+.custom-tip-btn {
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--dark-grayish-cyan);
+  z-index: 1;
+}
+
+.custom-tip-input {
+  position: absolute;
+  left: 0;
+  margin-bottom: 0;
+}
+
+.custom-tip-input-active {
+  z-index: 1;
+}
+
+.result-area {
+  display: grid;
+  gap: 2rem;
+  background-color: var(--very-dark-cyan);
+  border-radius: 0.5rem;
+  padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+.total {
+  display: grid;
+  /* text will overlap if the number is too long, but has a minimum size*/
+  /* 1. every grid item has a minimum & same size*/
+  /* grid-template-columns: repeat(2, minmax(8.75rem, 1fr)); */
+  /* 2. every grid item has different size(depends on the width of content), the right grid item has a minimum size*/
+  /* grid-template-columns: auto minmax(8.75rem, auto); */
+
+  /* text will not overlap, but no minimum size*/
+  /* 1. every grid item has the same size(depends on the width of content), will stretch the container*/
+  grid-template-columns: repeat(2, 1fr);
+  /* 2. every grid item has different size(depends on the width of content), do not stretch the container*/
+  /* grid-template-columns: repeat(2, auto); */
+
+  align-items: center;
+}
+
+.total-title {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.total-amount {
+  justify-self: end;
+  font-size: 2.25rem;
+}
+
+.attribution {
+  font-size: 0.68rem;
+  text-align: center;
+  color: #fff;
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--very-dark-cyan);
+}
+.attribution a:hover {
+  color: var(--strong-cyan);
+}
+
+@media (min-width: 880px) {
+  body {
+    padding: 0rem 1rem;
+  }
+  main {
+    gap: 5.5rem;
+  }
+  input[type="reset"] {
+    margin-top: 4rem;
+    min-width: 20.7rem;
+  }
+  form {
+    /* long numbers will cause overflow */
+    /* max-width: 57.5rem; */
+    padding: 2rem 2rem 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+  }
+
+  .tip-buttons {
+    grid-template-columns: repeat(3, minmax(0, 7.25rem));
+  }
+  .result-area {
+    gap: 3.75rem;
+    padding: 3.75rem 2.5rem 2.5rem 2.5rem;
+  }
+  .total {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 17px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--light-grayish-cyan);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--very-dark-cyan);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--strong-cyan);
+}

@@ -40,12 +40,10 @@ function closeModal(e) {
       desktopModal.style.display = "none";
     }
     currentState = false;
-  } else {
-    return;
   }
 }
 
-// listening to screen resing
+// listening to screen resizing
 window.addEventListener("resize", toggleModal);
 
 // open/close desktop modal, open mobile modal

@@ -26,7 +26,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  line-height: 1;
   background-color: $very-dark-blue;
   color: #fff;
   font-family: "Rubik", Arial, sans-serif;
@@ -60,6 +59,7 @@ button {
 h1 {
   color: #fff;
   text-align: center;
+  line-height: 1;
 }
 
 h2 {
@@ -70,9 +70,14 @@ h2 {
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 2.7rem;
   font-weight: 300;
   padding: 39px 0px 25px 0px;
+  line-height: 1;
+}
+
+p {
+  line-height: 1;
 }
 
 .container {

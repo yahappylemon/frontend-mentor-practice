@@ -17,5 +17,6 @@ This repo contains the free challenges on [Frontend Mentor](https://www.frontend
 | Article preview component | [Link](https://yahappylemon.github.io/frontend-mentor-practice/Article-preview-component/index.html)<br>[README](./Article-preview-component/README.md) |
 |  Newsletter sign-up form  |   [Link](https://yahappylemon.github.io/frontend-mentor-practice/Newsletter-sign-up-form/index.html)<br>[README](./Newsletter-sign-up-form/README.md)   |
 |  Time tracking dashboard  |   [Link](https://yahappylemon.github.io/frontend-mentor-practice/Time-tracking-dashboard/index.html)<br>[README](./Time-tracking-dashboard/README.md)   |
+|    Tip calculator app     |        [Link](https://yahappylemon.github.io/frontend-mentor-practice/Tip-calculator-app/index.html)<br>[README](./Tip-calculator-app/README.md)        |
 
 _Still Working on it...!! :muscle:_
