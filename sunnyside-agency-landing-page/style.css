@@ -1,0 +1,341 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Barlow", "Fraunces", sans-serif;
+  font-size: 19px;
+  text-align: center;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.desktop {
+  display: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* 容器「脫離文件流」，如果沒有指定 width，它的寬度只會跟內容一樣寬，導致space-between失效 */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktop-nav a {
+  color: hsl(0, 100%, 100%);
+}
+
+.desktop-nav a.contact {
+  background-color: hsl(0, 100%, 100%);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 120px;
+}
+
+.hamburger {
+  width: 25px;
+  cursor: pointer;
+}
+
+.arrow {
+  width: 10%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  color: hsl(212, 27%, 19%);
+  font-weight: 900;
+  font-size: 32px;
+  margin-bottom: 1rem;
+}
+
+.hero-section {
+  position: relative;
+}
+
+.hero-text {
+  font-family: "Fraunces", serif;
+  color: hsl(0, 100%, 100%);
+  font-size: 36px;
+  font-weight: 900;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.about-text {
+  margin: 2rem 1rem;
+  line-height: 1.5;
+  color: hsl(232, 10%, 55%);
+}
+
+.learn-more {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  position: relative;
+}
+
+/* 自定义底线 */
+.learn-more::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: hsl(51, 100%, 49%);
+  opacity: 0.3;
+  border-radius: 5px;
+}
+
+.learn-more.pink::after {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.learn-more:hover::after {
+  opacity: 1; /* hover 时底线颜色更深 */
+}
+
+.middle-section {
+  position: relative;
+}
+
+.middle-text {
+  position: absolute;
+  top: 60%;
+  font-size: 16px;
+  margin: 2rem 1rem;
+  line-height: 1.5;
+}
+
+.graphic {
+  color: hsl(167, 40%, 24%);
+}
+
+.photography {
+  color: hsl(198, 62%, 26%);
+}
+
+.clients {
+  padding: 2rem 1rem; /* 小屏幕时减少 padding */
+}
+
+.clients h2 {
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  color: hsl(210, 4%, 67%);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+.client-photo {
+  border-radius: 50%;
+  width: 72px;
+  margin: 2rem;
+}
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.feedback {
+  color: hsl(213, 9%, 39%);
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  color: hsl(212, 27%, 19%);
+  margin-bottom: 1rem;
+}
+
+.position {
+  color: hsl(210, 4%, 67%);
+  font-size: 14px;
+}
+
+.gallery-container {
+  display: flex;
+}
+
+/* 手机版：每张图片 50% */
+.gallery-container img {
+  width: 50%;
+}
+
+footer {
+  background-color: hsl(167, 44%, 70%);
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+footer svg {
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.footer-links a {
+  color: hsl(167, 34%, 41%);
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 5.5rem;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 20px;
+  cursor: pointer;
+}
+
+/* desktop */
+@media (min-width: 800px) {
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none;
+  }
+
+  .mobile-nav {
+    padding: 3rem;
+  }
+
+  .hero-text {
+    font-size: 44px;
+  }
+
+  .arrow {
+    width: 2%;
+    top: 53%;
+  }
+
+  .learn-more {
+    margin-top: 2rem;
+  }
+
+  .about-section {
+    display: flex;
+  }
+
+  .about-section .about-text {
+    padding: 3rem; /* 內距 */
+    text-align: left;
+    align-self: center;
+    width: 50%;
+  }
+
+  .about-section img {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .about-text .title {
+    /* font-size: 54px; */
+    font-size: 45px;
+    margin-bottom: 2rem;
+  }
+
+  .middle-section-container {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+  }
+
+  .middle-text {
+    padding-inline: 2rem;
+    margin: 0;
+  }
+
+  .gallery {
+    display: flex;
+  }
+
+  .gallery img {
+    width: 25%;
+  }
+
+  .divider {
+    justify-content: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .testimonials {
+    display: flex;
+    gap: 48px;
+  }
+
+  /* 桌面版增加 clients 的 padding */
+  .clients {
+    padding: 5rem 3rem;
+  }
+}
